@@ -6,19 +6,19 @@
     <title>Anti-NSFW</title>
     <style>
         :root {
+            --bg-color: #121212;
+            --text-color: #f5f5f5;
+            --button-bg: #4285f4;
+            --button-text: #000000;
+            --container-bg: #1e1e1e;
+        }
+
+        .dark-theme {
             --bg-color: #ffffff;
             --text-color: #333333;
             --button-bg: #4285f4;
             --button-text: #ffffff;
             --container-bg: #f5f5f5;
-        }
-
-        .dark-theme {
-            --bg-color: #121212;
-            --text-color: #f5f5f5;
-            --button-bg: #bb86fc;
-            --button-text: #000000;
-            --container-bg: #1e1e1e;
         }
 
         body {
@@ -95,29 +95,38 @@
             font-weight: bold;
         }
     </style>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+    
+    body{
+font-family: "JetBrains Mono";
+    }
+    </style>
+
 </head>
 <body>
-    <button class="theme-toggle" onclick="toggleTheme()">Dark Mode</button>
+    <button class="theme-toggle" onclick="toggleTheme()">Light Mode</button>
     
     <div class="container">
-        <div class="content">
-            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bc1b4ca8-9b64-4943-8964-9ceafd591957/dhsuymb-707b7f60-27ca-4aa3-8fd1-769ae6cc0e3f.png/v1/fill/w_1280,h_545,q_80,strp/if_you_hate_nsfw_join_antinsfwandrule_34_group_now_by_danmersonwestrentcs_dhsuymb-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTQ1IiwicGF0aCI6IlwvZlwvYmMxYjRjYTgtOWI2NC00OTQzLTg5NjQtOWNlYWZkNTkxOTU3XC9kaHN1eW1iLTcwN2I3ZjYwLTI3Y2EtNGFhMy04ZmQxLTc2OWFlNmNjMGUzZi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.ffRBdV5852YY_4fsVoCda905vhQshphgjQTEgZHqUwU" alt="HTTPS Icon" class="icon">
-            <div class="text-content">
-                <h1>Anti-NSFW</h1>
-                <p>With Anti-NSFW project, people have blocked from their computers already 1000+ porn sites. And if you hate porn or sexual sites you should try Anti-NSFW too.</p>
-                <a href="https://github.com/T0P0ICHH/Anti-NSFW/releases" class="btn" target="_blank">Download now</a>
-            </div>
-        </div>
-    </div>
+            <img src="antinsfw.png" width="100%">
+            <h1 style="text-align: center; background-image: linear-gradient(to right, #7B00FF, #FF0000); color: transparent; background-clip: text;">Anti-NSFW</h1>
+                <p style="text-align: center;">Anti-NSFW is a project made by T0P0ICHH and RD that blocks NSFW (Not Safe For Work) content on your browser.
+                    
+                    1000+ sites are already blocked by Anti-NSFW.
+                    
+                    If you hate NSFW sites you should try Anti-NSFW.</p>
+                <a href="https://github.com/T0P0ICHH/Anti-NSFW/releases" class="btn" target="_blank" style="text-align: center;">Download now</a>
 
+    </div>
     <script>
         function toggleTheme() {
             document.body.classList.toggle('dark-theme');
             const button = document.querySelector('.theme-toggle');
             if (document.body.classList.contains('dark-theme')) {
-                button.textContent = 'Light Mode';
-            } else {
                 button.textContent = 'Dark Mode';
+            } else {
+                button.textContent = 'Light Mode';
             }
         }
     </script>
